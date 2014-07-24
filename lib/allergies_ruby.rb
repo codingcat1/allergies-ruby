@@ -4,9 +4,11 @@ def allergies(items)
   allergy_scores.each do |allergy, score|
     if items == allergy
       total += score
+    elsif items == score
+      total = allergy
     end
   end
   total
 end
 
-puts allergies("cats")
+puts allergies(128)
