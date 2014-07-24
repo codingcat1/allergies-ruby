@@ -2,11 +2,11 @@ require('rspec')
 require('allergies_ruby')
 
 describe('allergies') do
-  it("returns a number score when user inputs an allergy") do
-    allergies('eggs').should(eq(1))
+  it("returns an allergy when user inputs a number") do
+    allergies(1).should(eq(['eggs']))
   end
 
-  it("returns an allergy when user inputs a number score") do
-    allergies(2).should(eq('peanuts'))
+  it("returns multiple possible allergies when user inputs a number") do
+    allergies(33).should(eq(['chocolate', 'eggs']))
   end
 end
