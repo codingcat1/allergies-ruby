@@ -10,7 +10,11 @@ describe('allergies') do
     allergies('peanuts').should(eq(2))
   end
 
-  it ("returns a score of 4 when a user inputs 'shellfish'") do
+  it("returns a score of 4 when a user inputs 'shellfish'") do
     allergies('shellfish').should(eq(4))
+  end
+
+  it("returns a score of 8 when a user inputs 'strawberries'") do
+    allergies('strawberries').should(eq(8))
   end
 end
