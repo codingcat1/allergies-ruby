@@ -29,4 +29,8 @@ describe('allergies') do
   it("returns a score of 64 when a user inputs 'pollen'") do
     allergies('pollen').should(eq(64))
   end
+
+  it("returns a score of 128 when a user inputs 'cats'") do
+    allergies('cats').should(eq(128))
+  end
 end
